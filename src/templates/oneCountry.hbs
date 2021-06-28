@@ -1,20 +1,36 @@
-{{#each this}}
-<h1 class="country_name">{{name}}</h1>
+
+{{!-- 
 <div class="flex_box">
     <div>
-        <p class="country_info">Capital: {{capital}}</p>
-        <p class="country_info">Population: {{population}}</p>
+        <h1 class="country_name">{{name}}</h1>
+        <h2 class="country_info">Capital: {{capital}}</h2>
+        <h2 class="country_info">Population: {{population}}</h2>
         <h2 class="country_info__title">Languages:</h2>
         <ul class="country_info">
-            <h2>Languages:</h2>
-            {{#each Languages}}
-            <li class="country_language">{{name}}</li>
+            {{#each languages}}
+            <li class="country_language">{{this.name}}</li>
             {{/each}}
         </ul>
 
     </div>
     <div class="image">
-        <img class="country_flag" src="{{flag}}" alt="flag" width="300">
+        <img class="country_flag" src="{{flag}}" alt="{{name}}" width="300">
+    </div>
+</div> --}}
+
+<div class="render">
+    <div class="render-content">
+        <h2>{{name}}</h2>
+        <h3>Capital: {{capital}}</h3>
+        <h3>Population: {{population}}</h3>
+        <ul>
+            <h3>Languages</h3>
+            {{#each languages}}
+            <li>{{this.name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="render-img">
+        <img src="{{flag}}" alt="{{name}}">
     </div>
 </div>
-{{/each}}
