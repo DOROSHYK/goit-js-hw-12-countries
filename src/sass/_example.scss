@@ -8,6 +8,22 @@
   padding: 16px;
 }
 
+h1 h2 h3 ul {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.padding {
+  padding: 0;
+}
+
 .example code {
   font-family: monospace;
   font-size: 16px;
@@ -28,15 +44,44 @@
 
 .header__input {
   outline: navy;
+  border: 1px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 
-.box__input {
-  display: flex;
-  margin-top: 100px;
-  margin-left: 550px;
+.box__input__container {
+  width: 1200px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .input {
   width: 200px;
   height: 30px;
+}
+
+.input {
+  border: solid 1px gold;
+  border: solid 1px gold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.render {
+  border: chartreuse 1px solid;
+}
+
+.render__cont {
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.render__img {
+  display: inline;
 }

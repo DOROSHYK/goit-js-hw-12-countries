@@ -1,36 +1,18 @@
 
-{{!-- 
-<div class="flex_box">
-    <div>
-        <h1 class="country_name">{{name}}</h1>
-        <h2 class="country_info">Capital: {{capital}}</h2>
-        <h2 class="country_info">Population: {{population}}</h2>
-        <h2 class="country_info__title">Languages:</h2>
-        <ul class="country_info">
-            {{#each languages}}
-            <li class="country_language">{{this.name}}</li>
-            {{/each}}
-        </ul>
-
-    </div>
-    <div class="image">
-        <img class="country_flag" src="{{flag}}" alt="{{name}}" width="300">
-    </div>
-</div> --}}
 
 <div class="render">
-    <div class="render-content">
+    <div class="render__cont">
         <h2>{{name}}</h2>
         <h3>Capital: {{capital}}</h3>
         <h3>Population: {{population}}</h3>
-        <ul>
-            <h3>Languages</h3>
+        <h3>Languages</h3>
+        <ul style="padding: 0;">
             {{#each languages}}
-            <li>{{this.name}}</li>
+            <li class="padding">{{this.name}}</li>
             {{/each}}
         </ul>
     </div>
-    <div class="render-img">
-        <img src="{{flag}}" alt="{{name}}">
+    <div class="render__img">
+        <img src="{{flag}}" alt="{{name}}" width="200" height="100">
     </div>
 </div>
